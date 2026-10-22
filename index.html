@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Magnata</title>
+  <meta name="description" content="Do farol ao trilhão: construa um império do zero. Jogo idle de dinheiro, negócios, bolsa e luxo.">
+  <meta name="theme-color" content="#04100b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Magnata">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" type="image/png" href="icons/icon-192.png">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta property="og:title" content="Magnata — do farol ao trilhão">
+  <meta property="og:description" content="Comece vendendo água no farol e construa um império até o espaço.">
+  <meta property="og:image" content="icons/icon-512.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header id="hud">
+      <canvas id="sky"></canvas>
+      <div class="hud-top">
+        <button id="btnStars" class="chip">⭐ <span id="hudStars">0</span></button>
+        <div class="era" id="hudEra">A Rua</div>
+        <button id="btnSound" class="chip icon" aria-label="Som">🔊</button>
+      </div>
+      <div class="cash"><span class="cur">R$</span><span id="hudCash">0</span></div>
+      <div class="rate"><span id="hudRate"></span><span id="hudBoosts"></span></div>
+      <div class="goal"><div class="goal-bar"><i id="goalFill"></i></div><span id="goalText"></span></div>
+    </header>
+    <main id="main">
+      <section class="tab" id="tab-biz"></section>
+      <section class="tab" id="tab-mgmt"></section>
+      <section class="tab" id="tab-invest"></section>
+      <section class="tab" id="tab-lux"></section>
+      <section class="tab" id="tab-empire"></section>
+    </main>
+    <button id="fab" aria-label="Trabalhar"></button>
+    <nav id="tabs"></nav>
+    <div id="fx"></div>
+    <div id="toasts"></div>
+    <div id="modal" hidden></div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

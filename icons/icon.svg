@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="20%" r="90%">
+      <stop offset="0" stop-color="#1d4a37"/><stop offset="0.6" stop-color="#08190f"/><stop offset="1" stop-color="#030a06"/>
+    </radialGradient>
+    <radialGradient id="coin" cx="38%" cy="30%" r="75%">
+      <stop offset="0" stop-color="#fff6cf"/><stop offset="0.25" stop-color="#ffe39a"/><stop offset="0.6" stop-color="#f6c453"/><stop offset="1" stop-color="#b3770f"/>
+    </radialGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe9a8"/><stop offset="1" stop-color="#8a5c0e"/>
+    </linearGradient>
+    <linearGradient id="city" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0f2a1e"/><stop offset="1" stop-color="#040d08"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" fill="url(#bg)"/>
+  <g fill="url(#city)" opacity="0.95">
+    <rect x="18" y="380" width="52" height="132"/><rect x="74" y="340" width="40" height="172"/><rect x="118" y="400" width="46" height="112"/>
+    <rect x="350" y="390" width="44" height="122"/><rect x="398" y="330" width="46" height="182"/><rect x="448" y="372" width="50" height="140"/>
+  </g>
+  <g fill="#f6c453" opacity="0.7">
+    <rect x="82" y="356" width="6" height="8"/><rect x="98" y="372" width="6" height="8"/><rect x="82" y="404" width="6" height="8"/>
+    <rect x="408" y="348" width="6" height="8"/><rect x="424" y="380" width="6" height="8"/><rect x="408" y="420" width="6" height="8"/>
+  </g>
+  <circle cx="256" cy="246" r="168" fill="#5c3a06" opacity="0.6" transform="translate(0 14)"/>
+  <circle cx="256" cy="246" r="168" fill="url(#rim)"/>
+  <circle cx="256" cy="246" r="146" fill="url(#coin)"/>
+  <circle cx="256" cy="246" r="128" fill="none" stroke="#b3770f" stroke-width="5" stroke-dasharray="3 9" opacity="0.7"/>
+  <path d="M176 330 V170 h28 l52 80 l52 -80 h28 V330 h-34 V230 l-46 70 l-46 -70 V330 Z" fill="#8a5c0e" transform="translate(0 6)" opacity="0.6"/>
+  <path d="M176 330 V170 h28 l52 80 l52 -80 h28 V330 h-34 V230 l-46 70 l-46 -70 V330 Z" fill="#fff3c4"/>
+  <path d="M176 330 V170 h28 l52 80 l52 -80 h28 V330 h-34 V230 l-46 70 l-46 -70 V330 Z" fill="none" stroke="#c98a1b" stroke-width="4"/>
+  <path d="M120 150 q30 -50 90 -64" stroke="#fffbe8" stroke-width="10" stroke-linecap="round" fill="none" opacity="0.55"/>
+</svg>

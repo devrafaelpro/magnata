@@ -1,0 +1,9 @@
+{
+  "name": "magnata",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "npx http-server -c-1 -p 5517 .",
+    "sim": "node scripts/sim.mjs 8"
+  }
+}

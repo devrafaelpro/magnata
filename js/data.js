@@ -1,0 +1,248 @@
+// Conteúdo do jogo: negócios, luxo, bolsa, eventos, marcos e talentos.
+
+export const BIZ = [
+  { id: 'agua', emoji: '🧊', name: 'Água no Farol', desc: 'Isopor, gelo e lábia no sinal vermelho.', mgr: 'Seu Zé do Isopor', mgrEmoji: '👴🏽',
+    upg: ['Isopor de 50 litros', 'Gelo de coco', 'Ponto no farol mais movimentado', 'Exército de ambulantes'] },
+  { id: 'pipoca', emoji: '🍿', name: 'Carrinho de Pipoca', desc: 'Doce, salgada e com bacon na porta do cinema.', mgr: 'Dona Cida', mgrEmoji: '👵🏾',
+    upg: ['Panela turbo', 'Pipoca gourmet', 'Ponto na saída do estádio', 'Franquia de carrinhos'] },
+  { id: 'lavajato', emoji: '🧽', name: 'Lava-Jato', desc: 'Ducha, cera e o Gol bolinha brilhando.', mgr: 'Marcão da Mangueira', mgrEmoji: '🧔🏿',
+    upg: ['Lavadora de alta pressão', 'Polimento cristalizado', 'Plano mensal para motoristas de app', 'Rede de lava-jatos'] },
+  { id: 'barbearia', emoji: '💈', name: 'Barbearia', desc: 'Degradê na navalha, cerveja gelada e resenha.', mgr: 'Jefinho Navalha', mgrEmoji: '💇🏽‍♂️',
+    upg: ['Cadeiras reclináveis', 'Chope liberado', 'Clube de assinatura', 'Barbearias nos shoppings'] },
+  { id: 'foodtruck', emoji: '🍔', name: 'Food Truck', desc: 'Smash burger com fila até de madrugada.', mgr: 'Chef Thiaguinho', mgrEmoji: '👨🏻‍🍳',
+    upg: ['Chapa dupla', 'Molho secreto da casa', 'Ponto fixo em festival', 'Frota de food trucks'] },
+  { id: 'pizzaria', emoji: '🍕', name: 'Pizzaria', desc: 'Forno a lenha, borda recheada e motoboy voando.', mgr: 'Nonna Giuseppina', mgrEmoji: '👵🏻',
+    upg: ['Forno a lenha italiano', 'Massa de fermentação natural', 'Delivery próprio', 'Rede nacional de pizzarias'] },
+  { id: 'academia', emoji: '🏋️', name: 'Academia', desc: 'Shape inexplicável a R$ 99,90 por mês.', mgr: 'Personal Bombado', mgrEmoji: '💪🏼',
+    upg: ['Aparelhos importados', 'Aulas de spinning', 'Plano anual sem fidelidade (quase)', 'Rede 24 horas'] },
+  { id: 'posto', emoji: '⛽', name: 'Posto de Combustível', desc: 'Gasolina, conveniência e pão de queijo.', mgr: 'Seu Arlindo', mgrEmoji: '👨🏽‍🦳',
+    upg: ['Bombas rápidas', 'Loja de conveniência 24h', 'Posto na rodovia', 'Distribuidora própria'] },
+  { id: 'mercado', emoji: '🛒', name: 'Supermercado', desc: 'Corredor de promoção e caixa rápido.', mgr: 'Dona Neide', mgrEmoji: '👩🏽‍💼',
+    upg: ['Padaria própria', 'Cartão fidelidade', 'Atacarejo', 'Rede de hipermercados'] },
+  { id: 'concessionaria', emoji: '🚗', name: 'Concessionária', desc: 'Financiamento em 60x e carro zero na garagem.', mgr: 'Vendedor Robson', mgrEmoji: '🕴🏻',
+    upg: ['Showroom de vidro', 'Seminovos certificados', 'Carros elétricos', 'Montadora própria'] },
+  { id: 'construtora', emoji: '🏗️', name: 'Construtora', desc: 'Prédios, condomínios e decorado com espumante.', mgr: 'Engenheiro Paulão', mgrEmoji: '👷🏽‍♂️',
+    upg: ['Guindastes novos', 'Alto padrão', 'Bairro planejado', 'Cidade inteira'] },
+  { id: 'soja', emoji: '🌾', name: 'Fazenda de Soja', desc: 'Milhares de hectares e safra recorde no cerrado.', mgr: 'Seu Valdir do Agro', mgrEmoji: '🤠',
+    upg: ['Colheitadeiras autônomas', 'Irrigação por pivô', 'Armazéns próprios', 'Exportação direto para a China'] },
+  { id: 'aviacao', emoji: '🛩️', name: 'Aviação Agrícola', desc: 'Pulverização de precisão em voo rasante.', mgr: 'Comandante Rafa', mgrEmoji: '👨🏻‍✈️',
+    upg: ['Ipanema turbinado', 'GPS de precisão', 'Drones pulverizadores', 'Frota continental'] },
+  { id: 'futebol', emoji: '⚽', name: 'Clube de Futebol', desc: 'Direitos de TV, camisas e craques vendidos à Europa.', mgr: 'Mister Português', mgrEmoji: '🧑🏻‍💼',
+    upg: ['Categoria de base forte', 'Arena multiuso', 'Camisa 10 galáctico', 'Multiclubes pelo mundo'] },
+  { id: 'banco', emoji: '🏦', name: 'Banco Digital', desc: 'Cartão sem anuidade, Pix e crédito para todo mundo.', mgr: 'CEO de Patinete', mgrEmoji: '🛴',
+    upg: ['App sem fila', 'Cartão preto metálico', 'Crédito com IA', 'Licença global'] },
+  { id: 'bigtech', emoji: '📱', name: 'Big Tech', desc: 'Apps, nuvem e inteligência artificial.', mgr: 'Gênio de Moletom', mgrEmoji: '🧑🏻‍💻',
+    upg: ['Data center no Nordeste', 'Rede social própria', 'Chip próprio', 'Superinteligência'] },
+  { id: 'petroleo', emoji: '🛢️', name: 'Petroleira', desc: 'Plataformas no pré-sal e barris a perder de vista.', mgr: 'Doutor Petrônio', mgrEmoji: '🧑🏼‍🔬',
+    upg: ['Plataforma flutuante', 'Refinaria própria', 'Pré-sal 2.0', 'Transição para energia limpa'] },
+  { id: 'aerea', emoji: '✈️', name: 'Companhia Aérea', desc: 'Mil aviões e a poltrona do meio por R$ 49.', mgr: 'Comandante Bigode', mgrEmoji: '👨🏼‍✈️',
+    upg: ['Rotas internacionais', 'Classe executiva', 'Aviões supersônicos', 'Hubs em todos os continentes'] },
+  { id: 'foguete', emoji: '🚀', name: 'Foguetes Reutilizáveis', desc: 'Lança, pousa e lança de novo.', mgr: 'Engenheira Estelar', mgrEmoji: '👩🏽‍🚀',
+    upg: ['Motores de metano', 'Pouso na balsa', 'Turismo orbital', 'Elevador espacial'] },
+  { id: 'asteroide', emoji: '☄️', name: 'Mineração de Asteroides', desc: 'Platina direto do cinturão de asteroides.', mgr: 'Minerador Espacial', mgrEmoji: '🧑🏿‍🚀',
+    upg: ['Rebocadores orbitais', 'Refinaria em gravidade zero', 'Captura de cometas', 'Cinturão inteiro'] },
+  { id: 'colonia', emoji: '🪐', name: 'Colônias Planetárias', desc: 'Condomínio fechado com vista para o Olympus Mons.', mgr: 'Prefeito de Marte', mgrEmoji: '👽',
+    upg: ['Cúpulas pressurizadas', 'Terraformação', 'Luas de Júpiter', 'Anéis de Saturno'] },
+  { id: 'dyson', emoji: '☀️', name: 'Esfera de Dyson', desc: 'Toda a energia do Sol, cobrada por kWh.', mgr: 'IA Supervisora', mgrEmoji: '🤖',
+    upg: ['Painéis orbitais', 'Enxame de espelhos', 'Esfera completa', 'Estrelas vizinhas'] },
+  { id: 'galaxia', emoji: '🌌', name: 'Banco Intergaláctico', desc: 'Juros compostos em escala cósmica.', mgr: 'Contador Alienígena', mgrEmoji: '👾',
+    upg: ['Agências em Andrômeda', 'Pix interestelar', 'Moeda galáctica', 'Banco Central da Via Láctea'] },
+  { id: 'multiverso', emoji: '🕳️', name: 'Multiverso S.A.', desc: 'Franquias em universos paralelos.', mgr: 'Você de Outro Universo', mgrEmoji: '🪞',
+    upg: ['Portal estável', 'Filiais paralelas', 'Fusão de realidades', 'Dono de tudo'] },
+];
+
+// Duração base do ciclo de cada negócio (segundos)
+export const TIMES = [1, 3, 6, 12, 20, 30, 45, 60, 90, 120, 180, 240, 300, 420, 600, 900, 1200, 1800, 2400, 3600, 5400, 7200, 10800, 14400];
+
+export const ERAS = [
+  { from: 0, name: 'A Rua' },
+  { from: 4, name: 'O Bairro' },
+  { from: 8, name: 'A Cidade' },
+  { from: 11, name: 'O País' },
+  { from: 15, name: 'O Mundo' },
+  { from: 18, name: 'O Espaço' },
+  { from: 22, name: 'O Infinito' },
+];
+
+// Itens de luxo: cada um multiplica todo o lucro. Somem quando você vende o império.
+export const LUX = [
+  ['👟', 'Tênis de grife', 800, 1.1],
+  ['📱', 'Celular top de linha', 9e3, 1.1],
+  ['🎮', 'Setup gamer completo', 30e3, 1.1],
+  ['⌚', 'Relógio suíço', 120e3, 1.15],
+  ['🏍️', 'Moto esportiva', 350e3, 1.15],
+  ['🚙', 'SUV blindada', 1.2e6, 1.15],
+  ['🏎️', 'Ferrari vermelha', 5e6, 1.2],
+  ['🛥️', 'Lancha de 50 pés', 18e6, 1.2],
+  ['🏙️', 'Cobertura na Faria Lima', 60e6, 1.2],
+  ['🚁', 'Helicóptero particular', 250e6, 1.25],
+  ['🖼️', 'Quadro modernista', 900e6, 1.25],
+  ['🛩️', 'Jatinho executivo', 3.5e9, 1.25],
+  ['🏝️', 'Ilha em Angra dos Reis', 15e9, 1.3],
+  ['🛳️', 'Megaiate com heliponto', 70e9, 1.3],
+  ['🏟️', 'Clube europeu de futebol', 400e9, 1.3],
+  ['🏢', 'Arranha-céu em Dubai', 2.5e12, 1.35],
+  ['📺', 'Rede de TV aberta', 15e12, 1.35],
+  ['🏰', 'Castelo na Escócia', 100e12, 1.35],
+  ['🛰️', 'Satélite particular', 800e12, 1.4],
+  ['🌆', 'Uma cidade inteira', 7e15, 1.4],
+  ['🗻', 'Monte Everest', 70e15, 1.4],
+  ['🏳️', 'País-ilha soberano', 800e15, 1.45],
+  ['🛸', 'Estação espacial privada', 1e19, 1.45],
+  ['🌕', 'A Lua (com escritura)', 2e21, 1.5],
+  ['🔴', 'Marte inteiro', 5e23, 1.5],
+  ['🪐', 'Anéis de Saturno', 2e26, 1.55],
+  ['🟠', 'Júpiter', 1e29, 1.6],
+  ['☀️', 'O Sol', 1e32, 1.65],
+  ['✨', 'Alpha Centauri', 1e36, 1.7],
+  ['💫', 'Braço de Órion', 1e41, 1.8],
+  ['🌌', 'A Via Láctea', 1e47, 1.9],
+  ['🌀', 'Andrômeda', 1e54, 2],
+  ['🫧', 'Superaglomerado Laniakea', 1e62, 2.2],
+  ['🔭', 'O Universo Observável', 1e72, 2.5],
+  ['♾️', 'O Multiverso', 1e85, 3],
+  ['🔟', 'Um Googol de reais', 1e100, 5],
+].map(([emoji, name, price, mult], i) => ({ i, emoji, name, price, mult }));
+
+// Marcos de fortuna (dinheiro ganho na vida, somando todas as gerações)
+export const MARCOS = [
+  [100, '💵', 'Primeira nota de cem'],
+  [1600, '🧾', 'Um salário mínimo'],
+  [10e3, '🛵', 'Deu pra comprar uma moto usada'],
+  [100e3, '🏡', 'Entrada do apartamento'],
+  [1e6, '🥂', 'Primeiro milhão'],
+  [10e6, '🏆', 'Top 1% mais rico do Brasil'],
+  [100e6, '💼', 'Top 0,01% do Brasil'],
+  [1e9, '💎', 'Bilionário!'],
+  [10e9, '📰', 'Capa da revista de negócios'],
+  [100e9, '🇧🇷', 'Pessoa mais rica do Brasil'],
+  [3e12, '🌎', 'Pessoa mais rica do mundo'],
+  [12e12, '🏛️', 'Mais que o PIB do Brasil'],
+  [170e12, '🦅', 'Mais que o PIB dos EUA'],
+  [600e12, '🌐', 'Mais que o PIB mundial'],
+  [2.5e15, '🌍', 'Toda a riqueza da Terra'],
+  [1e18, '🌕', 'Valor de mercado da Lua'],
+  [1e22, '🔴', 'Valor de mercado de Marte'],
+  [1e27, '☀️', 'Dono do Sistema Solar'],
+  [1e33, '🌌', 'A Via Láctea cabe no seu bolso'],
+  [1e45, '🌀', 'Mais rico que o Grupo Local'],
+  [1e60, '🔭', 'Universo observável'],
+  [1e80, '⚛️', 'Um real para cada átomo do universo'],
+  [1e100, '🔟', 'Um Googol'],
+  [1e150, '♾️', 'Além da matemática'],
+  [1e200, '🧠', 'Deus da economia'],
+  [1e300, '🕳️', 'O fim do dinheiro'],
+].map(([v, emoji, name], i) => ({ i, v, emoji, name }));
+
+// Talentos comprados com Reputação ⭐
+export const PERKS = [
+  { id: 'carisma', emoji: '😎', name: 'Carisma', desc: 'Cada ⭐ rende +0,5% a mais de lucro', max: 20, cost: l => Math.ceil(10 * Math.pow(1.9, l)) },
+  { id: 'heranca', emoji: '💰', name: 'Herança', desc: 'Começa cada geração com mais dinheiro', max: 15, cost: l => Math.ceil(5 * Math.pow(2.2, l)) },
+  { id: 'maos', emoji: '🖐️', name: 'Mãos de Ouro', desc: 'Toques valem x3', max: 25, cost: l => Math.ceil(3 * Math.pow(1.8, l)) },
+  { id: 'sono', emoji: '😴', name: 'Sono Tranquilo', desc: '+2h de lucro com o app fechado', max: 11, cost: l => Math.ceil(8 * Math.pow(1.7, l)) },
+  { id: 'faro', emoji: '💼', name: 'Faro de Negócios', desc: 'Maletas aparecem 20% mais', max: 8, cost: l => Math.ceil(15 * Math.pow(2, l)) },
+  { id: 'turbo', emoji: '⚡', name: 'Turbo', desc: 'Todos os negócios 25% mais rápidos', max: 8, cost: l => Math.ceil(25 * Math.pow(2.5, l)) },
+  { id: 'rh', emoji: '🤝', name: 'RH Eficiente', desc: 'Gerentes 15% mais baratos', max: 6, cost: l => Math.ceil(6 * Math.pow(2, l)) },
+  { id: 'escola', emoji: '🎓', name: 'Escola de Gestão', desc: 'Começa com +1 gerente contratado', max: 12, cost: l => Math.ceil(20 * Math.pow(2.4, l)) },
+];
+
+// Bolsa: mu = retorno esperado por hora; vol = desvio por minuto
+export const ASSETS = [
+  { id: 'selic', tk: 'SELIC', emoji: '🏛️', name: 'Tesouro Selic', kind: 'Renda fixa', mu: 0.06, vol: 0, p: 100 },
+  { id: 'ptbr', tk: 'PTBR4', emoji: '🛢️', name: 'Petrobrisa', kind: 'Ação', mu: 0.12, vol: 0.012, p: 38 },
+  { id: 'vldo', tk: 'VLDO3', emoji: '⛏️', name: 'Vale do Ouro', kind: 'Ação', mu: 0.11, vol: 0.011, p: 62 },
+  { id: 'brlx', tk: 'BRLX4', emoji: '🏦', name: 'Banco Brasilux', kind: 'Ação', mu: 0.10, vol: 0.008, p: 27 },
+  { id: 'agro', tk: 'AGRO3', emoji: '🚜', name: 'AgroCampo', kind: 'Ação', mu: 0.13, vol: 0.014, p: 19 },
+  { id: 'nuvm', tk: 'NUVM34', emoji: '☁️', name: 'Nuvem Tech', kind: 'BDR', mu: 0.18, vol: 0.02, p: 145 },
+  { id: 'fute', tk: 'FUTE11', emoji: '⚽', name: 'Futebol S.A.', kind: 'Ação', mu: 0.08, vol: 0.022, p: 12 },
+  { id: 'btca', tk: 'BTCÃ', emoji: '🪙', name: 'Bitcão', kind: 'Cripto', mu: 0.22, vol: 0.035, p: 512000 },
+  { id: 'etr', tk: 'ETR', emoji: '💠', name: 'Etério', kind: 'Cripto', mu: 0.2, vol: 0.045, p: 18500 },
+  { id: 'dogu', tk: 'DOGU', emoji: '🐶', name: 'Doguinha', kind: 'Memecoin', mu: 0.0, vol: 0.09, p: 0.42, jumps: true },
+];
+
+export const NEWS = {
+  up: [
+    '{n} anuncia lucro recorde no trimestre',
+    'Analistas elevam a recomendação de {n} para compra',
+    '{n} fecha contrato bilionário com a China',
+    'Fundo estrangeiro compra fatia grande de {n}',
+    '{n} vai pagar dividendos extraordinários',
+    'Rumores de fusão fazem {n} disparar',
+  ],
+  down: [
+    '{n} decepciona no balanço trimestral',
+    'CEO de {n} renuncia de surpresa',
+    'Investigação envolve diretoria de {n}',
+    '{n} perde contrato importante',
+    'Rebaixamento de rating derruba {n}',
+    'Greve paralisa operações de {n}',
+  ],
+  dogUp: ['Bilionário excêntrico tuitou sobre a Doguinha 🚀', 'Doguinha listada na maior corretora do mundo', 'Comunidade da Doguinha promete "to the moon"'],
+  dogDown: ['Dev da Doguinha sumiu com a liquidez 💀', 'Baleia despeja milhões de Doguinha no mercado', 'Influencer da Doguinha é preso por pirâmide'],
+};
+
+export const NAMES_FIRST = ['Jorge', 'Abílio', 'Luiza', 'Beto', 'Wanda', 'Edir', 'Silvio', 'Antônio', 'Ana', 'Rubens'];
+
+// Eventos aleatórios com escolhas. "fx" é interpretado pelo motor.
+export const EVENTS = [
+  { id: 'receita', emoji: '🦁', title: 'Receita Federal', text: 'Um auditor achou "inconsistências" na sua contabilidade.',
+    opts: [
+      { label: 'Pagar a multa', sub: '-8% do caixa', fx: [['cash', -0.08]] },
+      { label: 'Contestar na Justiça', sub: '50%: nada · 50%: -20%', fx: [['gamble', 0.5, [['msg', '⚖️ Você ganhou o processo!']], [['cash', -0.2], ['msg', '⚖️ Perdeu o processo...']]]] },
+    ] },
+  { id: 'viral', emoji: '📱', title: 'Viralizou!', text: 'Um vídeo do seu negócio explodiu nas redes. Todo mundo quer comprar.',
+    opts: [{ label: 'Aproveitar a onda', sub: 'Lucro x3 por 60s', fx: [['boost', 3, 60, '📱 Viral']] }] },
+  { id: 'greve', emoji: '🪧', title: 'Ameaça de greve', text: 'Os funcionários querem aumento. O clima está tenso.',
+    opts: [
+      { label: 'Dar um bônus', sub: '-3% do caixa · lucro x2 por 90s', fx: [['cash', -0.03], ['boost', 2, 90, '🤝 Equipe motivada']] },
+      { label: 'Ignorar', sub: 'Lucro x0,5 por 45s', fx: [['boost', 0.5, 45, '🪧 Greve']] },
+    ] },
+  { id: 'anjo', emoji: '😇', title: 'Investidor-anjo', text: 'Um investidor quer entrar no negócio e oferece um cheque gordo agora.',
+    opts: [
+      { label: 'Aceitar o cheque', sub: '+20 min de faturamento · lucro x0,7 por 2 min', fx: [['income', 1200], ['boost', 0.7, 120, '😇 Sócio chato']] },
+      { label: 'Recusar', sub: 'O negócio é só seu', fx: [['msg', '💪 Você manteve 100% da empresa.']] },
+    ] },
+  { id: 'influencer', emoji: '🤳', title: 'Publi com influencer', text: 'Uma influencer com 30 milhões de seguidores quer divulgar sua marca.',
+    opts: [
+      { label: 'Fechar a publi', sub: '-5% do caixa · lucro x4 por 90s', fx: [['cash', -0.05], ['boost', 4, 90, '🤳 Publi']] },
+      { label: 'Recusar', sub: 'Economiza o dinheiro', fx: [] },
+    ] },
+  { id: 'apagao', emoji: '🔌', title: 'Apagão na cidade', text: 'Caiu a energia em todos os seus negócios.',
+    opts: [
+      { label: 'Ligar geradores', sub: '-2% do caixa', fx: [['cash', -0.02], ['msg', '🔋 Geradores ligados. Nada parou.']] },
+      { label: 'Esperar voltar', sub: 'Produção parada por 20s', fx: [['boost', 0, 20, '🔌 Apagão']] },
+    ] },
+  { id: 'tio', emoji: '🧓', title: 'O tio do pavê', text: 'Seu tio pediu dinheiro emprestado para um "negócio garantido".',
+    opts: [
+      { label: 'Emprestar', sub: '-4% · 40%: ele devolve o triplo', fx: [['cash', -0.04], ['gamble', 0.4, [['cashAbs', 0.12], ['msg', '🧓 O tio devolveu o triplo! Quem diria.']], [['msg', '🧓 Nunca mais viu o dinheiro.']]]] },
+      { label: '"Tô sem nada aqui"', sub: 'Clima chato no Natal', fx: [] },
+    ] },
+  { id: 'poker', emoji: '🃏', title: 'Mesa VIP em Mônaco', text: 'Você foi convidado para uma mesa de pôquer com bilionários.',
+    opts: [
+      { label: 'All-in com 10%', sub: '45%: ganha 2,5x a aposta', fx: [['cash', -0.1], ['gamble', 0.45, [['cashAbs', 0.25], ['msg', '🃏 Royal flush! Você limpou a mesa.']], [['msg', '🃏 Blefaram você. Faz parte.']]]] },
+      { label: 'Só assistir', sub: 'Toma um drink e vai embora', fx: [] },
+    ] },
+  { id: 'copa', emoji: '🏆', title: 'O Brasil é hexa!', text: 'O país inteiro está em festa e gastando como nunca.',
+    opts: [{ label: 'Comemorar!', sub: 'Lucro x2,5 por 120s', fx: [['boost', 2.5, 120, '🏆 Hexa']] }] },
+  { id: 'blackfriday', emoji: '🏷️', title: 'Black Friday', text: 'Promoção em tudo. Os clientes estão enlouquecidos.',
+    opts: [
+      { label: 'Tudo pela metade do dobro', sub: 'Lucro x3 por 75s', fx: [['boost', 3, 75, '🏷️ Black Friday']] },
+    ] },
+  { id: 'hacker', emoji: '💻', title: 'Ataque hacker', text: 'Hackers sequestraram seus servidores e pedem resgate em cripto.',
+    opts: [
+      { label: 'Pagar o resgate', sub: '-4% do caixa', fx: [['cash', -0.04], ['msg', '💻 Sistemas de volta.']] },
+      { label: 'Chamar especialistas', sub: 'Lucro x0,4 por 60s', fx: [['boost', 0.4, 60, '💻 Sistemas lentos']] },
+    ] },
+  { id: 'dica', emoji: '🤫', title: 'Dica quente da Faria Lima', text: 'Um amigo jura que uma ação vai explodir amanhã. Pode ser verdade... ou não.',
+    opts: [
+      { label: 'Seguir a dica', sub: 'Investe 15% do caixa numa ação', fx: [['tip', 0.15]] },
+      { label: 'Desconfiar', sub: 'Dica de amigo, né...', fx: [] },
+    ] },
+  { id: 'safra', emoji: '🌽', title: 'Safra recorde', text: 'O agro bateu recorde de produção e a economia aqueceu.',
+    opts: [{ label: 'Aproveitar', sub: 'Lucro x2 por 120s', fx: [['boost', 2, 120, '🌽 Safra recorde']] }] },
+  { id: 'loteria', emoji: '🎟️', title: 'Bolão da firma', text: 'O pessoal do escritório está fazendo um bolão da Mega da Virada.',
+    opts: [
+      { label: 'Entrar com 1%', sub: '5%: ganha 30x', fx: [['cash', -0.01], ['gamble', 0.05, [['cashAbs', 0.3], ['msg', '🎟️ VOCÊS GANHARAM A MEGA!']], [['msg', '🎟️ Não foi dessa vez.']]]] },
+      { label: 'Passar a vez', sub: '', fx: [] },
+    ] },
+];
